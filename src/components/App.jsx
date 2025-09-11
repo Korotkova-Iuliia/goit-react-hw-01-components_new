@@ -3,7 +3,7 @@ import userData from '../user.json';
 export const App = () => {
   console.log({ userData });
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div>
       <Profile user={userData} />
     </div>
   );
