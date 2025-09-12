@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   text-align: center;
-
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
