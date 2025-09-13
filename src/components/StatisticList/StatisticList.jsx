@@ -1,4 +1,4 @@
-import Statistic from '../Statistic/Statistic';
+import StatisticItem from '../Statistic/Statistic';
 import { Section, Title, StatList, Item } from './StatisticList.styled';
 
 function StatisticList({ title, items }) {
@@ -9,7 +9,7 @@ function StatisticList({ title, items }) {
       <StatList className="stat-list">
         {items.map(item => (
           <Item key={item.id} className="item">
-            <Statistic label={item.label} percentage={item.percentage} />
+            <StatisticItem label={item.label} percentage={item.percentage} />
           </Item>
         ))}
       </StatList>

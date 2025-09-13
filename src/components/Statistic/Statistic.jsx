@@ -1,6 +1,6 @@
 import { Label, Percentage } from './Statistic.styled';
 
-function Statistic({ label, percentage }) {
+function StatisticItem({ label, percentage }) {
   return (
     <>
       <Label className="label">{label}</Label> :
@@ -9,7 +9,7 @@ function Statistic({ label, percentage }) {
   );
 }
 
-export default Statistic;
+export default StatisticItem;
 
 /* <section class="statistics">
   <h2 class="title">Upload stats</h2>
