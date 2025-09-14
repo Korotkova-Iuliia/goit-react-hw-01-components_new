@@ -1,16 +1,18 @@
 import FriendListItem from '../FriendListItem/FriendListItem';
 import FriendStatus from '../FriendStatus/FriendStatus';
+import * as S from './FriendList.styled';
+
 function FriendList({ items }) {
   console.log(items);
 
   return (
-    <ul className="friend-list">
+    <S.List className="friend-list">
       {items.map(item => (
         <FriendListItem key={item.id} friend={item}>
           <FriendStatus isOnline={item.isOnline} />
         </FriendListItem>
       ))}
-    </ul>
+    </S.List>
   );
 }
 

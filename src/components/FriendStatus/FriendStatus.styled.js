@@ -1,25 +1,23 @@
 import styled from 'styled-components';
 
-// Общие стили для статуса
 export const Status = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px; */
 `;
 
 export const BaseStatus = styled.span`
-  display: inline-block;
+  /* display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 6px;
+  background-color: ${({ isOnline }) => (isOnline ? 'green' : 'red')}; */
 `;
 
-// Варианты цвета
-export const Online = styled(BaseStatus)`
-  background-color: green;
-`;
-
-export const Offline = styled(BaseStatus)`
-  background-color: red;
+export const Text = styled.p`
+  /* font-size: 14px;
+  font-weight: 500;
+  color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
+  text-transform: capitalize;
+  margin: 0; */
 `;
