@@ -6,10 +6,10 @@ function FriendList({ items }) {
   console.log(items);
 
   return (
-    <S.List className="friend-list">
-      {items.map(item => (
-        <FriendListItem key={item.id} friend={item}>
-          <FriendStatus isOnline={item.isOnline} />
+    <S.List>
+      {items.map(({ id, isOnline, ...friend }) => (
+        <FriendListItem key={id} friend={friend}>
+          <FriendStatus isOnline={isOnline} />
         </FriendListItem>
       ))}
     </S.List>

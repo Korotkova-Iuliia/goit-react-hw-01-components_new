@@ -15,9 +15,10 @@ const variants = {
 };
 
 export const Button = styled.button`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 16px;
   border-radius: 6px;
   font-size: 16px;

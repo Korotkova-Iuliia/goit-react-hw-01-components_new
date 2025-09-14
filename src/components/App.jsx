@@ -2,11 +2,13 @@ import Profile from './Profile/Profile';
 import StatisticList from './StatisticList/StatisticList';
 import FriendList from './FriendList/FriendList';
 import Section from './Section/Section';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 import Button from './Button/Button';
 
-import userData from '../user.json';
-import statistics from '../data.json';
-import friends from '../friends.json';
+import userData from '../data/user.json';
+import statistics from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 export const App = () => {
   console.log({ userData });
@@ -29,8 +31,12 @@ export const App = () => {
       <Section title="Friends">
         <FriendList items={friends} />
       </Section>
+
+      <Section title="Transactions">
+        <TransactionHistory items={transactions} />
+      </Section>
+
       <Section>
-        {' '}
         <Button onClick={() => alert('В корзину')} variant="primary">
           🛒 В корзину
         </Button>

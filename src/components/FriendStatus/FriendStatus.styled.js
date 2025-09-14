@@ -11,13 +11,13 @@ export const BaseStatus = styled.span`
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
+  background-color: ${({ $isOnline }) => ($isOnline ? 'green' : 'red')};
 `;
 
 export const Text = styled.p`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
+  color: ${({ $isOnline }) => ($isOnline ? 'green' : 'red')};
   text-transform: capitalize;
   margin: 0;
 `;
