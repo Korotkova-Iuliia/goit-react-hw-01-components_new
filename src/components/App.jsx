@@ -4,6 +4,7 @@ import FriendList from './FriendList/FriendList';
 import Section from './Section/Section';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import Button from './Button/Button';
+import Homework from './Homework/Homework';
 
 import userData from '../data/user.json';
 import statistics from '../data/data.json';
@@ -44,6 +45,7 @@ export const App = () => {
           ℹ️ Подробнее
         </Button>
       </Section>
+      <Homework />
     </>
   );
 };
